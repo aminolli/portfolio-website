@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: White;
 }
@@ -10,6 +14,17 @@ Primary Color (Peacock): #204045;
 Secondary Color (Blush): #EBCDC4;
 Secondary Color (Sand): #D3B09D;
 */
+header {
+  background-color: #EBCDC4;
+  padding: 10px 0;
+  border-bottom: 3px solid #7F9593;
+  text-align: center;
+  -webkit-box-shadow: 0px 7px 16px 0px rgba(50, 50, 50, 0.55);
+-moz-box-shadow:    0px 7px 16px 0px rgba(50, 50, 50, 0.55);
+box-shadow:         0px 7px 16px 0px rgba(50, 50, 50, 0.55);
+  position: fixed;
+  width:100%;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -23,9 +38,15 @@ body {
   /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
-.logo {
-  width: 18%;
+
+selector {
+  width: 10%;
 }
+
+.logo {
+  max-width: 250px;
+}
+
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -76,19 +97,21 @@ a:focus {
   color: #7F9593;
   text-decoration: underline;
 }
+
 .button.contact {
   background-color: transparent;
   color: #204045;
   text-transform: uppercase;
   border: 2px solid #204045;
 }
+
 .button.contact:hover {
   background-color: #204045;
   color: #ffffff;
 }
+
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #204045;
   color: #ffffff;
   /* needed to override the default link color */
@@ -110,4 +133,56 @@ a:focus {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 30px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#projects .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #204045;
+}
+
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #204045;
+}
+
+nav>ul>li>a:hover {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+#hero {
+  background-color: #EBCDC4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+main {
+  padding-top: 133px;
 }
