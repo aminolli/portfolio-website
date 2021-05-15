@@ -156,6 +156,10 @@ a:focus {
   /* Centers text */
 }
 
+#about-page h3 {
+  margin-top: 0;
+}
+
 nav>ul {
   list-style-type: none;
   padding: 0;
@@ -189,6 +193,7 @@ nav>ul>li>a:hover {
 
 main {
   padding-top: 99px;
+  overflow: auto;
 }
 
 /* ==============================
@@ -208,13 +213,35 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
+    float: left;
+    padding: 10px;
   }
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /* ==============================
 X-large devices (1440px or larger)
