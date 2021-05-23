@@ -39,6 +39,10 @@ body {
   color: #4a4a4a;
 }
 
+footer {
+  text-align: center;
+}
+
 selector {
   width: 10%;
 }
@@ -169,6 +173,7 @@ a:focus {
     transform: translate(200px, 50px);
   }
 }
+
 .cloud-front {
   animation: 30s cloud-move infinite alternate linear;
 }
