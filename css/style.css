@@ -43,6 +43,10 @@ footer {
   text-align: center;
 }
 
+li {
+  display:inline;
+}
+
 selector {
   width: 10%;
 }
