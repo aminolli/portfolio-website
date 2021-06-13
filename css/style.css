@@ -51,7 +51,7 @@ selector {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 360px;
 }
 
 h1, h2, h3, h4 {
@@ -300,11 +300,16 @@ Medium devices (640px and larger)
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1000px) {
   .col-lg-5 {
     width: 41.66%;
   }
 
+.about {
+  width: 35%;
+  float: right;
+  padding: 20px;
+}
   .col-lg-7 {
     width: 58.33%;
   }
