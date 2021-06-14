@@ -262,6 +262,9 @@ main {
   overflow: auto;
 }
 
+.responsive-iframe {
+  position: absolute;
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -289,7 +292,6 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
-}
 
 .row::after {
   content: "";
@@ -324,4 +326,4 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px)
